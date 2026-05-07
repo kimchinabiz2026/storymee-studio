@@ -385,7 +385,7 @@ export const ips: IP[] = [
       '/assets/corgi/env4.png',
     ],
     characters: [
-      { name: { vi: 'Ú', en: 'Ú' }, role: 'Main Character', bio: { vi: 'Chó corgi mập ú với chiếc vòng cổ xanh, ham ăn và luôn gây rắc rối đáng yêu.', en: 'Chubby corgi with a blue collar, food-loving and always causing adorable trouble.' }, gradient: 'linear-gradient(135deg, #cc6600, #FF9800)', image: '/assets/corgi/u.jpg' },
+      { name: { vi: 'Ú', en: 'Ú' }, role: 'Main Character', bio: { vi: 'Chó corgi mập ú với chiếc vòng cổ xanh, ham ăn và luôn gây rắc rối đáng yêu.', en: 'Chubby corgi with a blue collar, food-loving and always causing adorable trouble.' }, gradient: 'linear-gradient(135deg, #cc6600, #FF9800)', image: '/assets/corgi/u.png' },
       { name: { vi: 'Cô Thảo', en: 'Cô Thảo' }, role: 'Chủ của Ú', bio: { vi: 'Cô gái trẻ yêu động vật, luôn phải đau đầu giải quyết những rắc rối do Ú gây ra.', en: 'A young girl who loves animals, always having a headache solving the troubles Ú causes.' }, gradient: 'linear-gradient(135deg, #e91e63, #ff6090)', image: '/assets/corgi/thao.jpg' },
       { name: { vi: 'Bà Tâm', en: 'Bà Tâm' }, role: 'Hàng xóm', bio: { vi: 'Bà hàng xóm thân thiện, thường xuyên cho Ú ăn vặt.', en: 'Friendly neighbor who frequently gives Ú snacks.' }, gradient: 'linear-gradient(135deg, #4caf50, #81c784)', image: '/assets/corgi/batam.png' },
       { name: { vi: 'Ông Bình', en: 'Ông Bình' }, role: 'Hàng xóm', bio: { vi: 'Ông lão khó tính nhưng thực ra rất quý Ú.', en: 'A grumpy old man who actually adores Ú.' }, gradient: 'linear-gradient(135deg, #607d8b, #90a4ae)', image: '/assets/corgi/ongbinh.png' },
