@@ -99,16 +99,10 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
             gap: '40px',
           }}>
             <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2 }}>
-              {lang === 'vi'
-                ? 'StoryMee là studio xây dựng và phát triển thế giới nhân vật IP tại Việt Nam, từ phim hoạt hình, nội dung ngắn, nội dung dài, đến hệ thống nhân vật cho các thương hiệu lớn. Chúng tôi tin rằng Việt Nam xứng đáng có một Disney của riêng mình, và chúng tôi đang tiên phong xây dựng từng nhân vật, từng thế giới, từng câu chuyện.'
-                : 'StoryMee is a studio that builds and develops IP character worlds in Vietnam from animated films, short-form content, long-form content, to character systems for major brands. We believe Vietnam deserves its own Disney, and we are pioneering the creation of each character, each world, each story.'
-              }
+              {dict.about.story_p1}
             </p>
             <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2 }}>
-              {lang === 'vi'
-                ? 'Với hệ sinh thái 4+ IP gốc đang phát triển từ chú vẹt Paco đáng yêu, gấu nâu hiền lành, corgi Ú hài hước đến thế giới vi khuẩn kỳ thú StoryMee đang từng bước đưa animation Việt Nam ra thế giới. Mỗi nhân vật chúng tôi tạo ra đều mang DNA Việt nhưng có sức hấp dẫn toàn cầu.'
-                : 'With an ecosystem of 4+ original IPs in development from the adorable parrot Paco, gentle brown bear, hilarious corgi Ú, to the fascinating microbe world StoryMee is step by step bringing Vietnamese animation to the world. Every character we create carries Vietnamese DNA with global appeal.'
-              }
+              {dict.about.story_p2}
             </p>
           </div>
         </RevealOnScroll>
