@@ -88,7 +88,7 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
           <span className="text-label" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '16px' }}>
             {dict.about.story_label}
           </span>
-          <h1 className="text-display-l" style={{ marginBottom: '40px', maxWidth: '700px' }}>
+          <h1 className="text-display-l" style={{ marginBottom: '40px', width: '100%' }}>
             {dict.about.story_title}
           </h1>
         </RevealOnScroll>
