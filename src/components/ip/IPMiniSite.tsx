@@ -222,7 +222,7 @@ export default function IPMiniSite({ lang, dict, ip }: Props) {
               gap: '60px',
             }}>
               <div>
-                <h2 className="text-display-m" style={{ marginBottom: '24px' }}>
+                <h2 className="text-display-m" style={{ fontFamily: 'var(--font-body)', textTransform: 'none', marginBottom: '24px' }}>
                   {lang === 'vi' ? 'Thế giới' : 'The World'}
                 </h2>
                 <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2 }}>
@@ -446,7 +446,7 @@ export default function IPMiniSite({ lang, dict, ip }: Props) {
                 marginBottom: '60px',
               }}>
                 <div>
-                  <h2 className="text-display-m" style={{ marginBottom: '24px' }}>
+                  <h2 className="text-display-m" style={{ fontFamily: 'var(--font-body)', textTransform: 'none', marginBottom: '24px' }}>
                     {lang === 'vi' ? 'Hợp tác & Licensing' : 'Partnership & Licensing'}
                   </h2>
                   <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2, marginBottom: '32px' }}>
