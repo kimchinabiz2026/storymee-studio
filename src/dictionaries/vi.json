@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "work": "SẢN PHẨM",
+    "ips": "IPs",
+    "about": "VỀ CHÚNG TÔI",
+    "press": "BÁO CHÍ",
+    "careers": "TUYỂN DỤNG",
+    "contact": "LIÊN HỆ"
+  },
+  "hero": {
+    "tagline": "Nơi câu chuyện trở thành thế giới.",
+    "subtitle": "Studio xây dựng thế giới nhân vật IP tại Việt Nam.",
+    "scroll": "CUỘN ĐỂ KHÁM PHÁ",
+    "sound_on": "BẬT ÂM",
+    "sound_off": "TẮT ÂM"
+  },
+  "stats": {
+    "ips": "IPs",
+    "projects": "DỰ ÁN",
+    "est": "THÀNH LẬP"
+  },
+  "three_doors": {
+    "label": "02 — CHỌN LỐI ĐI",
+    "title": "Ba cánh cửa.",
+    "brand": {
+      "label": "DÀNH CHO BRANDS & AGENCIES",
+      "title": "Xem các dự án sản xuất",
+      "desc": "Quảng cáo, music video, phim ngắn — được tạo ra với sự chính xác điện ảnh.",
+      "cta": "Khám phá"
+    },
+    "partners": {
+      "label": "DÀNH CHO ĐỐI TÁC IP",
+      "title": "Đầu tư vào những câu chuyện gốc",
+      "desc": "Cơ hội đồng sản xuất, cấp phép và phân phối cho danh mục IP đang phát triển.",
+      "cta": "Xem IPs"
+    },
+    "fans": {
+      "label": "DÀNH CHO FANS",
+      "title": "Bước vào thế giới chúng tôi xây dựng",
+      "desc": "Nhân vật, tập phim, truyền thuyết — hòa mình vào vũ trụ từ studio.",
+      "cta": "Khám phá IPs"
+    }
+  },
+  "featured_ip": {
+    "label": "03 — IP NỔI BẬT",
+    "cta": "Bước vào thế giới"
+  },
+  "press": {
+    "label": "04 — XUẤT HIỆN TRÊN",
+    "title": "Báo chí & Ghi nhận"
+  },
+  "cta": {
+    "headline": "Có dự án?",
+    "headline2": "Hãy nói chuyện.",
+    "primary": "Bắt đầu dự án",
+    "secondary": "Xem các IPs"
+  },
+  "work_page": {
+    "title": "Sản phẩm",
+    "filters": {
+      "all": "Tất cả",
+      "ip": "IP",
+      "production": "Sản xuất",
+      "commercial": "Quảng cáo",
+      "music_video": "Music Video",
+      "short_film": "Phim ngắn",
+      "series": "Series",
+      "post_production": "Hậu kỳ",
+      "book": "Sách",
+      "podcast": "Podcast"
+    },
+    "load_more": "Xem thêm",
+    "view_all": "Xem tất cả"
+  },
+  "project": {
+    "client": "Khách hàng",
+    "role": "Vai trò",
+    "year": "Năm",
+    "services": "Dịch vụ",
+    "challenge": "Thách thức",
+    "approach": "Cách tiếp cận",
+    "outcome": "Kết quả",
+    "bts": "Hậu trường",
+    "credits": "Thành phần",
+    "next": "Dự án tiếp theo"
+  },
+  "ip_page": {
+    "title": "Các IP của chúng tôi",
+    "tabs": {
+      "world": "Thế giới",
+      "cast": "Nhân vật",
+      "episodes": "Tập phim",
+      "licensing": "Hợp tác"
+    },
+    "watch_trailer": "Xem trailer",
+    "view_episodes": "Xem tập phim"
+  },
+  "about": {
+    "title": "Về chúng tôi",
+    "story_label": "01 — CÂU CHUYỆN",
+    "story_title": "Sinh ra từ tình yêu kể chuyện.",
+    "team_label": "02 — ĐỘI NGŨ",
+    "team_title": "Những con người đằng sau phép màu.",
+    "services_label": "03 — DỊCH VỤ",
+    "services_title": "Chúng tôi làm gì.",
+    "ip_dev": "Phát triển IP",
+    "production": "Sản xuất",
+    "post_production": "Hậu kỳ",
+    "pipeline_label": "04 — QUY TRÌNH",
+    "pipeline_title": "Cách chúng tôi làm việc.",
+    "awards_label": "05 — GIẢI THƯỞNG & KHÁCH HÀNG"
+  },
+  "press_page": {
+    "title": "Báo chí",
+    "kit_title": "Bộ báo chí",
+    "kit_desc": "Tải bộ báo chí đầy đủ bao gồm logo, hình ảnh chính, ảnh chân dung đội ngũ và thông tin.",
+    "download": "Tải Bộ báo chí (ZIP)"
+  },
+  "careers_page": {
+    "title": "Tuyển dụng",
+    "tagline": "Cùng chúng tôi trên hành trình sáng tạo.",
+    "open": "Vị trí đang tuyển",
+    "always": "Chúng tôi luôn tìm kiếm...",
+    "always_desc": "Những cá nhân tài năng đam mê kể chuyện và nghệ thuật thị giác. Gửi portfolio của bạn.",
+    "life": "Cuộc sống tại Studio"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Hãy cùng tạo nên điều phi thường.",
+    "name": "Họ tên",
+    "email": "Email",
+    "company": "Công ty",
+    "project_type": "Loại dự án",
+    "budget": "Ngân sách",
+    "timeline": "Thời gian",
+    "message": "Tin nhắn",
+    "send": "Gửi tin nhắn",
+    "sent": "Đã gửi! Chúng tôi sẽ phản hồi trong vòng 48 giờ.",
+    "types": {
+      "ip": "Hợp tác IP",
+      "commercial": "Quảng cáo",
+      "music_video": "Music Video",
+      "short_film": "Phim ngắn",
+      "other": "Khác"
+    },
+    "budgets": {
+      "small": "< $10k",
+      "medium": "$10k – $50k",
+      "large": "$50k – $200k",
+      "enterprise": "$200k+",
+      "tbd": "Chưa xác định"
+    },
+    "info": {
+      "address": "Hà Đông, Hà Nội\nViệt Nam",
+      "general": "storymee@gmail.com",
+      "business": "storymee@gmail.com"
+    }
+  },
+  "footer": {
+    "rights": "Bản quyền thuộc về.",
+    "newsletter": "Đăng ký nhận bản tin",
+    "subscribe": "Đăng ký"
+  }
+}

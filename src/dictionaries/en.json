@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "work": "WORK",
+    "ips": "IPs",
+    "about": "ABOUT",
+    "press": "PRESS",
+    "careers": "CAREERS",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "tagline": "Where stories become worlds.",
+    "subtitle": "Building IP character worlds from Vietnam.",
+    "scroll": "SCROLL TO EXPLORE",
+    "sound_on": "SOUND ON",
+    "sound_off": "SOUND OFF"
+  },
+  "stats": {
+    "ips": "IPs",
+    "projects": "PROJECTS",
+    "est": "EST."
+  },
+  "three_doors": {
+    "label": "02 — CHOOSE YOUR PATH",
+    "title": "Three doors.",
+    "brand": {
+      "label": "FOR BRANDS & AGENCIES",
+      "title": "See our production work",
+      "desc": "Commercials, music videos, short films — crafted with cinematic precision.",
+      "cta": "Explore work"
+    },
+    "partners": {
+      "label": "FOR IP PARTNERS",
+      "title": "Invest in original stories",
+      "desc": "Co-production, licensing, and distribution opportunities for our growing IP portfolio.",
+      "cta": "View IPs"
+    },
+    "fans": {
+      "label": "FOR FANS",
+      "title": "Enter the worlds we build",
+      "desc": "Characters, episodes, lore — dive into the universes born from our studio.",
+      "cta": "Discover IPs"
+    }
+  },
+  "featured_ip": {
+    "label": "03 — FEATURED IP",
+    "cta": "Enter the world"
+  },
+  "press": {
+    "label": "04 — AS SEEN IN",
+    "title": "Press & Recognition"
+  },
+  "cta": {
+    "headline": "Got a project?",
+    "headline2": "Let's talk.",
+    "primary": "Start a project",
+    "secondary": "Browse our IPs"
+  },
+  "work_page": {
+    "title": "Work",
+    "filters": {
+      "all": "All",
+      "ip": "IP",
+      "production": "Production",
+      "commercial": "Commercial",
+      "music_video": "Music Video",
+      "short_film": "Short Film",
+      "series": "Series",
+      "post_production": "Post Production",
+      "book": "Book",
+      "podcast": "Podcast"
+    },
+    "load_more": "Load more",
+    "view_all": "View all work"
+  },
+  "project": {
+    "client": "Client",
+    "role": "Role",
+    "year": "Year",
+    "services": "Services",
+    "challenge": "Challenge",
+    "approach": "Approach",
+    "outcome": "Outcome",
+    "bts": "Behind the Scenes",
+    "credits": "Credits",
+    "next": "Next project"
+  },
+  "ip_page": {
+    "title": "Our IPs",
+    "tabs": {
+      "world": "World",
+      "cast": "Cast",
+      "episodes": "Episodes",
+      "licensing": "Licensing"
+    },
+    "watch_trailer": "Watch trailer",
+    "view_episodes": "View episodes"
+  },
+  "about": {
+    "title": "About",
+    "story_label": "01 — OUR STORY",
+    "story_title": "Born from a love of storytelling.",
+    "team_label": "02 — THE TEAM",
+    "team_title": "The people behind the magic.",
+    "services_label": "03 — SERVICES",
+    "services_title": "What we do.",
+    "ip_dev": "IP Development",
+    "production": "Production",
+    "post_production": "Post Production",
+    "pipeline_label": "04 — PIPELINE",
+    "pipeline_title": "How we work.",
+    "awards_label": "05 — AWARDS & CLIENTS"
+  },
+  "press_page": {
+    "title": "Press",
+    "kit_title": "Press Kit",
+    "kit_desc": "Download our complete press kit including logos, key visuals, headshots, and fact sheets.",
+    "download": "Download Press Kit (ZIP)"
+  },
+  "careers_page": {
+    "title": "Careers",
+    "tagline": "Join our creative journey.",
+    "open": "Open Positions",
+    "always": "We're always looking for...",
+    "always_desc": "Talented individuals who are passionate about storytelling and visual arts. Send us your portfolio.",
+    "life": "Life at Studio"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's create something extraordinary together.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "project_type": "Project Type",
+    "budget": "Budget Range",
+    "timeline": "Timeline",
+    "message": "Message",
+    "send": "Send Message",
+    "sent": "Message sent! We'll get back to you within 48 hours.",
+    "types": {
+      "ip": "IP Collaboration",
+      "commercial": "Commercial",
+      "music_video": "Music Video",
+      "short_film": "Short Film",
+      "other": "Other"
+    },
+    "budgets": {
+      "small": "< $10k",
+      "medium": "$10k – $50k",
+      "large": "$50k – $200k",
+      "enterprise": "$200k+",
+      "tbd": "TBD"
+    },
+    "info": {
+      "address": "Ha Dong, Hanoi\nVietnam",
+      "general": "storymee@gmail.com",
+      "business": "storymee@gmail.com"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "newsletter": "Subscribe to our newsletter",
+    "subscribe": "Subscribe"
+  }
+}
