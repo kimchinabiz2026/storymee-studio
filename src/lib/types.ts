@@ -125,6 +125,7 @@ export interface TeamMember {
   role: { vi: string; en: string };
   bio: { vi: string; en: string };
   gradient: string;
+  image?: string;
   social: { twitter?: string; linkedin?: string; instagram?: string };
 }
 

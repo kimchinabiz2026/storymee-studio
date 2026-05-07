@@ -189,7 +189,7 @@ export default function HeroSection({ lang, dict }: Props) {
           }}
         >
           {[
-            { value: '04', label: dict.stats.ips },
+            { value: '06', label: dict.stats.ips },
             { value: '27', label: dict.stats.projects },
             { value: '2026', label: dict.stats.est },
           ].map((stat) => (

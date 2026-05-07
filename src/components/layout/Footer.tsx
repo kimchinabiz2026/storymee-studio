@@ -77,9 +77,15 @@ export default function Footer({ lang, dict }: Props) {
             <a href="tel:0976915836" className="text-caption" style={{ color: 'var(--text-secondary)' }}>
               0976 915 836
             </a>
-            <p className="text-caption" style={{ color: 'var(--text-tertiary)', marginTop: '8px', whiteSpace: 'pre-line' }}>
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=180+Thanh+Binh,+Ha+Dong,+Hanoi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-caption" 
+              style={{ color: 'var(--text-tertiary)', marginTop: '8px', whiteSpace: 'pre-line', transition: 'color 0.3s ease', display: 'block', textDecoration: 'none' }}
+            >
               {dict.contact.info.address}
-            </p>
+            </a>
           </div>
         </div>
 

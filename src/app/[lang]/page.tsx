@@ -18,7 +18,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <HeroSection lang={lang} dict={dict} />
       <FeaturedWork lang={lang} dict={dict} projects={featuredProjects} />
       <ThreeDoors lang={lang} dict={dict} />
-      <FeaturedIP lang={lang} dict={dict} ip={featuredIP} />
+      <FeaturedIP lang={lang} dict={dict} ips={ips} />
       <PressStrip lang={lang} dict={dict} logos={pressLogos} />
       <HomeCTA lang={lang} dict={dict} />
     </>

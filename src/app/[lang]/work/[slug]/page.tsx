@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           margin: '0 auto',
         }}>
           <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '12px' }}>
-            {project.client} — {project.year}
+            {project.client}{project.year > 0 ? ` — ${project.year}` : ''}
           </span>
           <h1 className="text-display-xl">{project.title[l]}</h1>
         </div>
@@ -77,10 +77,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
             <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '4px' }}>{dict.project.role}</span>
             <span className="text-caption" style={{ color: 'var(--text-primary)' }}>Direction & Production</span>
           </div>
+          {project.year > 0 && (
           <div>
             <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '4px' }}>{dict.project.year}</span>
             <span className="text-caption" style={{ color: 'var(--text-primary)' }}>{project.year}</span>
           </div>
+          )}
           <div>
             <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '4px' }}>{dict.project.services}</span>
             <span className="text-caption" style={{ color: 'var(--text-primary)' }}>{project.services.join(', ')}</span>

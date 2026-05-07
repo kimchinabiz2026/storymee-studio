@@ -7,128 +7,108 @@ import RevealOnScroll from '@/components/cinematic/RevealOnScroll';
 interface Props {
   lang: string;
   dict: Dictionary;
-  ip: IP;
+  ips: IP[];
 }
 
-export default function FeaturedIP({ lang, dict, ip }: Props) {
+export default function FeaturedIP({ lang, dict, ips }: Props) {
+  // Duplicate array to create seamless loop
+  const scrollItems = [...ips, ...ips, ...ips, ...ips];
+
   return (
     <section
-      id="featured-ip"
+      id="featured-ips"
       style={{
         position: 'relative',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
+        background: '#050505', // Black background
+        padding: 'clamp(80px, 10vh, 120px) 0',
         overflow: 'hidden',
       }}
     >
-      {/* Background */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        background: ip.gradient,
-        opacity: 0.5,
-      }} />
-      <div className="film-grain" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }} />
+      <RevealOnScroll>
+        <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 clamp(20px, 4vw, 60px)', marginBottom: '40px' }}>
+          <span className="text-label" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '16px' }}>
+            {dict.featured_ip.label}
+          </span>
+          <h2 className="text-display-m" style={{ color: '#fff' }}>
+            {lang === 'vi' ? 'Vũ trụ StoryMee' : 'StoryMee Universe'}
+          </h2>
+        </div>
+      </RevealOnScroll>
 
-      <div style={{
-        position: 'relative',
-        zIndex: 2,
-        width: '100%',
-        maxWidth: '1400px',
-        margin: '0 auto',
-        padding: 'clamp(120px, 15vh, 200px) clamp(20px, 4vw, 60px)',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: 'clamp(40px, 6vw, 100px)',
-        alignItems: 'center',
-      }}>
-        {/* Key Visual */}
-        <RevealOnScroll>
-          <div style={{
-            aspectRatio: '3/4',
-            background: ip.gradient,
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            {ip.keyVisual ? (
-              <img
-                src={ip.keyVisual}
-                alt={ip.name.en}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-            ) : ip.videoUrl ? (
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              >
-                <source src={ip.videoUrl} type="video/mp4" />
-              </video>
-            ) : (
-              <div className="video-placeholder" style={{ width: '100%', height: '100%' }}>
-                <div className="vp-bg" style={{ background: ip.gradient }} />
-              </div>
-            )}
-            {/* IP Logo overlay */}
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              background: 'linear-gradient(0deg, rgba(10,10,11,0.5) 0%, transparent 50%)',
-            }}>
-              <span style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(48px, 8vw, 120px)',
-                fontWeight: 400,
-                opacity: 0.15,
-                letterSpacing: '-2px',
+      {/* Marquee Style */}
+      <style>{`
+        @keyframes scrollRight {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0%); }
+        }
+        .marquee-track {
+          display: flex;
+          width: max-content;
+          animation: scrollRight 40s linear infinite;
+        }
+        .marquee-track:hover {
+          animation-play-state: paused;
+        }
+        .ip-card-image {
+          transition: transform 0.5s ease;
+        }
+        .ip-card:hover .ip-card-image {
+          transform: scale(1.05);
+        }
+      `}</style>
+
+      {/* Marquee Container */}
+      <div style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
+        <div className="marquee-track" style={{ gap: '32px', padding: '20px 0' }}>
+          {scrollItems.map((ip, index) => (
+            <Link 
+              href={`/${lang}/ips/${ip.slug}`} 
+              key={`${ip.slug}-${index}`}
+              className="ip-card"
+              style={{
+                display: 'block',
+                width: 'clamp(280px, 25vw, 400px)',
+                aspectRatio: '4/5',
+                position: 'relative',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid rgba(255,255,255,0.1)',
+                textDecoration: 'none',
+                flexShrink: 0,
+                background: ip.gradient,
+              }}
+            >
+              {ip.keyVisual ? (
+                <img
+                  src={ip.keyVisual}
+                  alt={ip.name[lang as 'vi' | 'en']}
+                  className="ip-card-image"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              ) : (
+                <div style={{ width: '100%', height: '100%', background: ip.gradient }} />
+              )}
+              
+              {/* Overlay Content */}
+              <div style={{
+                position: 'absolute',
+                bottom: 0, left: 0, right: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, transparent 100%)',
+                padding: '40px 24px 24px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '8px'
               }}>
-                {ip.name.en}
-              </span>
-            </div>
-          </div>
-        </RevealOnScroll>
-
-        {/* Content */}
-        <RevealOnScroll delay={200}>
-          <div>
-            <span className="text-label" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '24px' }}>
-              {dict.featured_ip.label}
-            </span>
-            <h2 className="text-display-l" style={{ marginBottom: '12px' }}>
-              {ip.name[lang as 'vi' | 'en']}
-            </h2>
-            <p className="text-body" style={{
-              color: 'var(--text-secondary)',
-              fontStyle: 'italic',
-              marginBottom: '24px',
-            }}>
-              {ip.tagline[lang as 'vi' | 'en']}
-            </p>
-
-            <div className="badge production" style={{ marginBottom: '24px' }}>
-              {ip.status.toUpperCase()}
-            </div>
-
-            <p className="text-body" style={{
-              color: 'var(--text-secondary)',
-              marginBottom: '40px',
-              maxWidth: '400px',
-              lineHeight: 1.8,
-            }}>
-              {ip.worldDescription[lang as 'vi' | 'en'].slice(0, 200)}...
-            </p>
-
-            <Link href={`/${lang}/ips/${ip.slug}`} className="btn-primary">
-              {dict.featured_ip.cta} →
+                <span className="text-headline" style={{ color: '#fff', fontSize: '24px' }}>
+                  {ip.name[lang as 'vi' | 'en']}
+                </span>
+                <span className="text-caption" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                  {ip.tagline[lang as 'vi' | 'en']}
+                </span>
+              </div>
             </Link>
-          </div>
-        </RevealOnScroll>
+          ))}
+        </div>
       </div>
     </section>
   );

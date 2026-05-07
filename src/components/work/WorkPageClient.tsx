@@ -165,7 +165,7 @@ export default function WorkPageClient({ lang, dict, projects }: Props) {
                   {String(i + 1).padStart(2, '0')} / {project.title[lang as 'vi' | 'en']}
                 </span>
                 <span className="text-caption" style={{ color: 'var(--text-secondary)' }}>
-                  {project.client} — {project.year}
+                  {project.client}{project.year > 0 ? ` — ${project.year}` : ''}
                 </span>
               </div>
             </Link>

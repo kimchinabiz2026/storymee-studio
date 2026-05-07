@@ -168,29 +168,24 @@ export default function ContactPageClient({ lang, dict }: Props) {
                 </div>
               </div>
 
-              {/* Map placeholder */}
+              {/* Map embed */}
               <div style={{
                 aspectRatio: '16/9',
-                background: 'var(--bg-card)',
                 border: '1px solid var(--border-subtle)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden',
+                borderRadius: '4px',
               }}>
-                <div style={{
-                  position: 'absolute',
-                  inset: 0,
-                  background: 'linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #0a0a0b 100%)',
-                  opacity: 0.5,
-                }} />
-                <div style={{ position: 'relative', textAlign: 'center' }}>
-                  <span style={{ fontSize: '24px', display: 'block', marginBottom: '8px' }}>📍</span>
-                  <span className="text-micro" style={{ color: 'var(--text-tertiary)' }}>
-                    GOOGLE MAPS
-                  </span>
-                </div>
+                <iframe 
+                  src="https://maps.google.com/maps?q=180%20Thanh%20Binh,%20Ha%20Dong,%20Hanoi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0, display: 'block' }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="StoryMee Studio Location"
+                ></iframe>
               </div>
             </div>
           </RevealOnScroll>

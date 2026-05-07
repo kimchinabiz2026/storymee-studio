@@ -3,7 +3,60 @@
 import { use } from 'react';
 import { getDictionary } from '@/lib/i18n';
 import { team, clientLogos } from '@/lib/demo-data';
+import type { TeamMember } from '@/lib/types';
 import RevealOnScroll from '@/components/cinematic/RevealOnScroll';
+import Image from 'next/image';
+
+const TeamMemberCard = ({ member, lang, delay }: { member: TeamMember, lang: 'vi'|'en', delay: number }) => {
+  if (!member) return null;
+  return (
+    <RevealOnScroll delay={delay}>
+      <div style={{
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border-subtle)',
+        overflow: 'hidden',
+        transition: 'border-color 0.3s ease',
+      }}>
+        <div style={{
+          aspectRatio: '1/1',
+          background: member.gradient,
+          position: 'relative',
+        }}>
+          {member.image ? (
+            <Image 
+              src={member.image} 
+              alt={member.name} 
+              fill 
+              style={{ objectFit: 'cover' }} 
+            />
+          ) : (
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '64px',
+              fontFamily: 'var(--font-display)',
+              opacity: 0.08,
+            }}>
+              {member.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+            </div>
+          )}
+        </div>
+        <div style={{ padding: '16px' }}>
+          <h3 className="text-headline" style={{ fontSize: '16px', marginBottom: '2px' }}>{member.name}</h3>
+          <span className="text-micro" style={{ color: 'var(--accent)', display: 'block', marginBottom: '8px' }}>
+            {member.role[lang]}
+          </span>
+          <p className="text-caption" style={{ color: 'var(--text-secondary)' }}>
+            {member.bio[lang]}
+          </p>
+        </div>
+      </div>
+    </RevealOnScroll>
+  );
+};
 
 export default function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = use(params);
@@ -136,49 +189,68 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
           </h2>
         </RevealOnScroll>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-          gap: '20px',
-        }}>
-          {team.map((member, i) => (
-            <RevealOnScroll key={member.name} delay={i * 80}>
-              <div style={{
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
-                overflow: 'hidden',
-                transition: 'border-color 0.3s ease',
-              }}>
-                <div style={{
-                  aspectRatio: '1/1',
-                  background: member.gradient,
-                  position: 'relative',
-                }}>
-                  <div style={{
-                    position: 'absolute',
-                    inset: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '64px',
-                    fontFamily: 'var(--font-display)',
-                    opacity: 0.08,
-                  }}>
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                </div>
-                <div style={{ padding: '16px' }}>
-                  <h3 className="text-headline" style={{ fontSize: '16px', marginBottom: '2px' }}>{member.name}</h3>
-                  <span className="text-micro" style={{ color: 'var(--accent)', display: 'block', marginBottom: '8px' }}>
-                    {member.role[l]}
-                  </span>
-                  <p className="text-caption" style={{ color: 'var(--text-secondary)' }}>
-                    {member.bio[l]}
-                  </p>
-                </div>
-              </div>
-            </RevealOnScroll>
-          ))}
+        {/* Row 1: Founders */}
+        <div style={{ marginBottom: '40px' }}>
+          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+            {lang === 'vi' ? 'Ban Giám Đốc' : 'Board of Directors'}
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '20px',
+          }}>
+            {team.slice(0, 2).map((member, i) => (
+              <TeamMemberCard key={member.name} member={member} lang={l} delay={i * 80} />
+            ))}
+          </div>
+        </div>
+
+        {/* Row 2: Team Production */}
+        <div style={{ marginBottom: '40px' }}>
+          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+            Team Production
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '20px',
+          }}>
+            {[team[3], team[5]].map((member, i) => (
+              <TeamMemberCard key={member.name} member={member} lang={l} delay={i * 80} />
+            ))}
+          </div>
+        </div>
+
+        {/* Row 3: Team Creative */}
+        <div style={{ marginBottom: '40px' }}>
+          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+            Team Creative
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '20px',
+          }}>
+            {[team[2], team[4]].map((member, i) => (
+              <TeamMemberCard key={member.name} member={member} lang={l} delay={i * 80} />
+            ))}
+          </div>
+        </div>
+
+        {/* Row 4: Team Growth */}
+        <div style={{ marginBottom: '40px' }}>
+          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+            Team Growth
+          </h3>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: '20px',
+          }}>
+            {[team[6]].map((member, i) => (
+              <TeamMemberCard key={member.name} member={member} lang={l} delay={i * 80} />
+            ))}
+          </div>
         </div>
       </section>
 
