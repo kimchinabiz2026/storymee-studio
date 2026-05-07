@@ -45,7 +45,7 @@ const TeamMemberCard = ({ member, lang, delay }: { member: TeamMember, lang: 'vi
           )}
         </div>
         <div style={{ padding: '20px 16px' }}>
-          <h3 className="text-display-m" style={{ fontSize: '24px', marginBottom: '4px' }}>{member.name}</h3>
+          <h3 className="text-display-m" style={{ fontFamily: 'var(--font-body)', fontSize: '24px', marginBottom: '4px' }}>{member.name}</h3>
           <span className="text-label" style={{ color: 'var(--accent)', display: 'block', marginBottom: '12px' }}>
             {member.role[lang]}
           </span>
