@@ -20,113 +20,142 @@ export default function FeaturedWork({ lang, dict, projects }: Props) {
         margin: '0 auto',
       }}
     >
-      <RevealOnScroll>
-        <div style={{ marginBottom: '60px' }}>
-          <span className="text-label" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '16px' }}>
-            01 — OUR WORK
-          </span>
-          <h2 className="text-display-l">
-            {lang === 'vi' ? 'Tuyển chọn.' : 'Selected work.'}
-          </h2>
-        </div>
-      </RevealOnScroll>
-
-      {/* Asymmetric masonry grid */}
       <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1.4fr 1fr',
-        gap: '20px',
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        gap: 'clamp(40px, 6vw, 80px)',
       }}>
-        {projects.map((project, i) => (
-          <RevealOnScroll key={project.slug} delay={i * 100}>
-            <Link
-              href={`/${lang}/work/${project.slug}`}
-              data-cursor-video
-              style={{
-                display: 'block',
-                position: 'relative',
-                aspectRatio: '16/9',
-                overflow: 'hidden',
-                gridColumn: i % 3 === 0 ? 'span 1' : undefined,
+        {/* Left Side: Title */}
+        <div style={{
+          flex: '1 1 300px',
+          maxWidth: '400px',
+        }}>
+          <RevealOnScroll>
+            <h2 style={{
+              fontFamily: 'var(--font-display)',
+              fontSize: 'clamp(50px, 8vw, 80px)', // Made smaller
+              fontWeight: 900,
+              color: '#ffffff', // Changed to white
+              lineHeight: 0.85,
+              letterSpacing: '-2px',
+              margin: 0,
+            }}>
+              WORK
+            </h2>
+            <h3 style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '13px',
+              letterSpacing: '4px',
+              color: 'var(--text-secondary)',
+              marginTop: '16px',
+              fontWeight: 600,
+            }}>
+              THE MAKING OF ANIMATION
+            </h3>
+            <p style={{
+              marginTop: '32px',
+              fontSize: '14px',
+              color: 'var(--text-tertiary)',
+              lineHeight: 1.8,
+            }}>
+              {lang === 'vi' 
+                ? 'Khám phá các dự án nổi bật, quá trình kiến tạo thế giới nhân vật và đằng sau hậu trường của StoryMee Studio.' 
+                : 'Explore our selected projects, the world-building process, and behind the scenes of StoryMee Studio.'}
+            </p>
+            
+            <div style={{ marginTop: '48px' }}>
+              <Link href={`/${lang}/work`} style={{
+                color: '#E91E63',
+                fontSize: '14px',
+                fontWeight: 600,
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                transition: 'opacity 0.3s ease',
               }}
-            >
-              {/* Video placeholder */}
-              <div style={{
-                position: 'absolute',
-                inset: 0,
-                background: project.gradient,
-                transition: 'transform 0.6s cubic-bezier(0.65, 0, 0.35, 1)',
-              }}
-                className="work-tile-bg"
-              >
-                {project.thumbnail && project.thumbnail !== '/placeholder.jpg' && (
-                  <img
-                    src={project.thumbnail}
-                    alt={project.title[lang as 'vi' | 'en']}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                )}
-                {project.videoUrl && !project.thumbnail?.includes('paco') && (
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
-                  >
-                    <source src={project.videoUrl} type="video/mp4" />
-                  </video>
-                )}
-              </div>
-              {/* Hover overlay */}
-              <div style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(0deg, rgba(10,10,11,0.7) 0%, transparent 50%)',
-                zIndex: 1,
-              }} />
-
-              {/* Caption */}
-              <div style={{
-                position: 'absolute',
-                bottom: '16px',
-                left: '16px',
-                right: '16px',
-                zIndex: 2,
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'flex-end',
-              }}>
-                <div>
-                  <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '4px' }}>
-                    {String(i + 1).padStart(2, '0')} / {project.title[lang as 'vi' | 'en']}
-                  </span>
-                  <span className="text-caption" style={{ color: 'var(--text-secondary)' }}>
-                    {project.client} — {project.year}
-                  </span>
-                </div>
-                <span className="text-micro" style={{ color: 'var(--text-tertiary)' }}>
-                  {project.category.toUpperCase().replace('_', ' ')}
-                </span>
-              </div>
-            </Link>
+              onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.7'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}>
+                {dict.work_page.view_all} &gt;
+              </Link>
+            </div>
           </RevealOnScroll>
-        ))}
-      </div>
-
-      <RevealOnScroll delay={600}>
-        <div style={{ marginTop: '48px', textAlign: 'center' }}>
-          <Link href={`/${lang}/work`} className="btn-secondary" style={{ display: 'inline-flex' }}>
-            {dict.work_page.view_all} →
-          </Link>
         </div>
-      </RevealOnScroll>
 
-      <style jsx>{`
-        .work-tile-bg:hover {
-          transform: scale(1.02);
-        }
-      `}</style>
+        {/* Right Side: Grid */}
+        <div style={{
+          flex: '2 1 600px',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gap: '24px',
+        }}>
+          {projects.map((project, i) => (
+            <RevealOnScroll key={project.slug} delay={300 + i * 150}>
+              <Link
+                href={`/${lang}/work/${project.slug}`}
+                style={{
+                  display: 'block',
+                  background: '#1a1a1a', // Changed to gray
+                  padding: '12px',
+                  borderRadius: '4px',
+                  textDecoration: 'none',
+                  transition: 'transform 0.3s ease',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
+              >
+                <div style={{
+                  aspectRatio: '16/9',
+                  overflow: 'hidden',
+                  position: 'relative',
+                  border: '1px solid rgba(255,255,255,0.05)', // Darker border
+                }}>
+                  {project.thumbnail && project.thumbnail !== '/placeholder.jpg' && (
+                    <img
+                      src={project.thumbnail}
+                      alt={project.title[lang as 'vi' | 'en']}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  )}
+                  {project.videoUrl && !project.thumbnail?.includes('paco') && (
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
+                    >
+                      <source src={project.videoUrl} type="video/mp4" />
+                    </video>
+                  )}
+                </div>
+                
+                <div style={{ marginTop: '16px', padding: '0 4px 8px' }}>
+                  <div style={{
+                    color: '#E91E63',
+                    fontSize: '12px',
+                    fontWeight: 700,
+                    marginBottom: '8px',
+                    fontFamily: 'var(--font-body)',
+                  }}>
+                    {project.year || new Date().getFullYear()} {lang === 'vi' ? 'CẬP NHẬT' : 'UPDATED'}
+                  </div>
+                  <div style={{
+                    color: '#ffffff', // Title color to white for contrast on gray
+                    fontSize: '15px',
+                    fontWeight: 600,
+                    lineHeight: 1.4,
+                  }}>
+                    {project.title[lang as 'vi' | 'en']}
+                  </div>
+                </div>
+              </Link>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

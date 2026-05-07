@@ -19,7 +19,7 @@ export default function FeaturedIP({ lang, dict, ips }: Props) {
       id="featured-ips"
       style={{
         position: 'relative',
-        background: '#050505', // Black background
+        background: 'transparent', // Transparent to show video background
         padding: 'clamp(80px, 10vh, 120px) 0',
         overflow: 'hidden',
       }}

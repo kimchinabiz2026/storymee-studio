@@ -4,7 +4,7 @@ import type { Project, IP, TeamMember, PressArticle, JobPosting } from './types'
 export const projects: Project[] = [
   {
     slug: 'paco-series',
-    title: { vi: 'PACO — Series Animation', en: 'PACO — Animation Series' },
+    title: { vi: 'PACO Series Animation', en: 'PACO Animation Series' },
     client: 'StoryMee Original IP',
     year: 2026,
     category: 'ip',
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     gradient: 'linear-gradient(135deg, #0a2e0a 0%, #1b691b 30%, #2d8b2d 60%, #0a0a0b 100%)',
     videoUrl: '/assets/paco/paco-episodes.mp4',
     caseStudy: {
-      challenge: { vi: 'Xây dựng series animation 3D cho nhân vật vẹt Paco — tạo một IP giáo dục tiếng Anh hài hước giúp người xem học từ vựng và phát âm một cách tự nhiên.', en: 'Building a 3D animation series for the parrot character Paco — creating a humorous English education IP that helps viewers learn vocabulary and pronunciation naturally.' },
+      challenge: { vi: 'Xây dựng series animation 3D cho nhân vật vẹt Paco tạo một IP giáo dục tiếng Anh hài hước giúp người xem học từ vựng và phát âm một cách tự nhiên.', en: 'Building a 3D animation series for the parrot character Paco creating a humorous English education IP that helps viewers learn vocabulary and pronunciation naturally.' },
       approach: { vi: 'Phát triển nhân vật 3D chất lượng Pixar-level với tính cách ngây thơ, luôn "hiểu sai nhưng trung thành tuyệt đối", kết hợp câu chuyện giáo dục nhẹ nhàng.', en: 'Developing Pixar-level 3D characters with naive personality, always "misunderstanding but absolutely loyal", combining gentle educational stories.' },
       outcome: { vi: 'Nhận được sự quan tâm từ nhiều đối tác phát hành quốc tế, fanbase đang phát triển mạnh mẽ.', en: 'Received interest from multiple international distribution partners, fanbase growing rapidly.' },
     },
@@ -22,14 +22,14 @@ export const projects: Project[] = [
       { role: 'Character Design', name: 'StoryMee Art Team' },
       { role: '3D Animation', name: 'StoryMee Animation' },
       { role: 'Sound Design', name: 'StoryMee Audio' },
-      { role: 'Cast — Paco Nhỏ', name: 'Cute Paco (phiên bản nhỏ)' },
-      { role: 'Cast — Paco Trưởng Thành', name: 'Young Paco (phiên bản lớn)' },
-      { role: 'Cast — Paco Già', name: 'Exp Paco (phiên bản già)' },
+      { role: 'Cast Paco Nhỏ', name: 'Cute Paco (phiên bản nhỏ)' },
+      { role: 'Cast Paco Trưởng Thành', name: 'Young Paco (phiên bản lớn)' },
+      { role: 'Cast Paco Già', name: 'Exp Paco (phiên bản già)' },
     ],
   },
   {
     slug: 'bigpaw',
-    title: { vi: 'BIGPAW — Cuộc Phiêu Lưu', en: 'BIGPAW — The Adventure' },
+    title: { vi: 'BIGPAW Cuộc Phiêu Lưu', en: 'BIGPAW The Adventure' },
     client: 'StoryMee Original IP',
     year: 2026,
     category: 'ip',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'corgi-u',
-    title: { vi: 'Ú — Corgi Khu Tập Thể', en: 'Ú — Corgi in the Neighborhood' },
+    title: { vi: 'Ú Corgi Khu Tập Thể', en: 'Ú Corgi in the Neighborhood' },
     client: 'StoryMee Original IP',
     year: 2026,
     category: 'ip',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     gradient: 'linear-gradient(135deg, #1a0a00 0%, #cc6600 30%, #ff9933 50%, #0a0a0b 100%)',
     videoUrl: '/assets/ip-corgi.mp4',
     caseStudy: {
-      challenge: { vi: 'Kể chuyện về một chú corgi mập mạp sống trong khu tập thể Hà Nội — phải chạm đến cảm xúc và mang tính Việt Nam sâu sắc.', en: 'Telling the story of a chubby corgi living in a Hanoi apartment complex — must be emotionally touching and deeply Vietnamese.' },
+      challenge: { vi: 'Kể chuyện về một chú corgi mập mạp sống trong khu tập thể Hà Nội phải chạm đến cảm xúc và mang tính Việt Nam sâu sắc.', en: 'Telling the story of a chubby corgi living in a Hanoi apartment complex must be emotionally touching and deeply Vietnamese.' },
       approach: { vi: 'Silent comedy format 15 giây, tận dụng visual storytelling thuần túy, không cần lời thoại để vượt qua rào cản ngôn ngữ.', en: '15-second silent comedy format, leveraging pure visual storytelling, no dialogue needed to cross language barriers.' },
       outcome: { vi: 'Series viral trên TikTok với hàng triệu views, nhận được nhiều đề nghị hợp tác licensing.', en: 'Series went viral on TikTok with millions of views, received multiple licensing collaboration offers.' },
     },
@@ -71,7 +71,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'tiny-world',
-    title: { vi: 'TINY WORLD — Thế Giới Vi Khuẩn', en: 'TINY WORLD — The Microbe World' },
+    title: { vi: 'TINY WORLD Thế Giới Vi Khuẩn', en: 'TINY WORLD The Microbe World' },
     client: 'StoryMee Original IP',
     year: 2026,
     category: 'ip',
@@ -130,7 +130,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'storymee-film',
-    title: { vi: 'StoryMee — Film Production', en: 'StoryMee — Film Production' },
+    title: { vi: 'StoryMee Film Production', en: 'StoryMee Film Production' },
     client: 'StoryMee Studio',
     year: 2026,
     category: 'production',
@@ -174,7 +174,7 @@ export const projects: Project[] = [
   {
     slug: 'amanoi-commercial',
     title: { vi: 'Amanoi Resort', en: 'Amanoi Resort' },
-    client: 'Fly Amazing Stay - & Partner Amanoi Resort',
+    client: 'Fly Amazing Stay & Partner Amanoi Resort',
     year: 0,
     category: 'commercial',
     services: ['Direction', 'Cinematography', 'Post Production'],
@@ -187,7 +187,7 @@ export const projects: Project[] = [
       outcome: { vi: 'Video nhận được nhiều phản hồi tích cực từ khách hàng và đối tác.', en: 'The video received highly positive feedback from clients and partners.' },
     },
     credits: [
-      { role: 'Client', name: 'Fly Amazing Stay - & Partner Amanoi Resort' },
+      { role: 'Client', name: 'Fly Amazing Stay & Partner Amanoi Resort' },
       { role: 'Producer', name: 'Kim Ngân' },
       { role: 'Director', name: 'Tuấn Đức' },
       { role: 'D.O.P', name: 'Sơn Hoàng' },
@@ -200,7 +200,7 @@ export const projects: Project[] = [
   },
   {
     slug: '1010-years-thang-long',
-    title: { vi: '1010 Years Thang Long — Hanoi', en: '1010 Years Thang Long — Hanoi' },
+    title: { vi: '1010 Years Thang Long Hanoi', en: '1010 Years Thang Long Hanoi' },
     client: 'Orient Vietnam',
     year: 0,
     category: 'commercial',
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     gradient: 'linear-gradient(135deg, #2a0a0a 0%, #5a1a1a 30%, #8a2d2d 50%, #0a0a0b 100%)',
     videoUrl: '/assets/thang-long.mp4',
     caseStudy: {
-      challenge: { vi: 'Tiếng kim đồng hồ hòa cùng nhịp sống Hà Nội nghìn năm, từ Tháp Rùa rêu phong soi bóng Hồ Gươm, đến mái ngói phố cổ nhuộm nắng chiều thu. Mỗi chiếc đồng hồ là một lát cắt Thăng Long. Đeo trên tay không chỉ là đồng hồ – mà là cả một Hà Nội ngàn năm văn hiến.', en: 'The ticking of a watch harmonizes with the thousand-year rhythm of Hanoi, from the moss-covered Turtle Tower reflecting on Hoan Kiem Lake to the ancient tiled roofs bathed in autumn sunlight. Each watch is a slice of Thang Long. Wearing it is not just wearing a watch – it is wearing a thousand years of Hanoi\'s heritage.' },
+      challenge: { vi: 'Tiếng kim đồng hồ hòa cùng nhịp sống Hà Nội nghìn năm, từ Tháp Rùa rêu phong soi bóng Hồ Gươm, đến mái ngói phố cổ nhuộm nắng chiều thu. Mỗi chiếc đồng hồ là một lát cắt Thăng Long. Đeo trên tay không chỉ là đồng hồ mà là cả một Hà Nội ngàn năm văn hiến.', en: 'The ticking of a watch harmonizes with the thousand-year rhythm of Hanoi, from the moss-covered Turtle Tower reflecting on Hoan Kiem Lake to the ancient tiled roofs bathed in autumn sunlight. Each watch is a slice of Thang Long. Wearing it is not just wearing a watch it is wearing a thousand years of Hanoi\'s heritage.' },
       approach: { vi: 'Tập trung vào các khung hình mang tính biểu tượng và văn hóa của thủ đô.', en: 'Focusing on iconic and cultural frames of the capital.' },
       outcome: { vi: 'Sản phẩm mang đậm dấu ấn lịch sử, được lan truyền rộng rãi.', en: 'A culturally significant product that was widely shared.' },
     },
@@ -229,7 +229,7 @@ export const projects: Project[] = [
     videoUrl: '/assets/your-vietnam.mp4',
     caseStudy: {
       challenge: { vi: 'Nghe tiếng khèn H\'Mông vang vọng giữa đại ngàn Hà Giang, tiếng sóng vỗ rì rào ôm lấy vịnh Hạ Long lúc bình minh. Nghe tiếng rao đêm Hà Nội nao lòng người xa xứ, tiếng chuông chùa Thiên Mụ ngân nga trên dòng Hương giang. Nghe tiếng đàn bầu rung động giữa đêm Hội An đèn lồng, tiếng cười giòn tan của lũ trẻ chân trần đuổi nhau trên cánh đồng lúa chín Mù Cang Chải. Nghe tiếng ghe xuồng khua nước miền Tây, tiếng mẹ ru à ơi vọng về từ miền ký ức.', en: 'Hear the H\'Mong flute echoing through Ha Giang\'s vast mountains, the waves gently embracing Ha Long Bay at dawn. Hear the night vendors\' calls in Hanoi touching the hearts of those far from home, the bells of Thien Mu Pagoda resonating over the Perfume River.' },
-      approach: { vi: 'Từng thước phim được quay bằng cả trái tim – từ flycam vút lên đỉnh Fansipan kiêu hãnh, đến cận cảnh giọt mồ hôi lăn trên gò má người nông dân. Từ ánh hoàng hôn nhuộm vàng ruộng bậc thang, đến khoảnh khắc ánh mắt em bé vùng cao chạm vào ống kính – trong veo như giọt sương đầu núi.', en: 'Every frame was shot with heart – from drones soaring to the proud peak of Fansipan, to close-ups of sweat rolling down a farmer\'s cheek. From golden sunsets dyeing terraced fields, to the moment a highland child\'s eyes meet the lens – as clear as morning dew on the mountaintop.' },
+      approach: { vi: 'Từng thước phim được quay bằng cả trái tim từ flycam vút lên đỉnh Fansipan kiêu hãnh, đến cận cảnh giọt mồ hôi lăn trên gò má người nông dân. Từ ánh hoàng hôn nhuộm vàng ruộng bậc thang, đến khoảnh khắc ánh mắt em bé vùng cao chạm vào ống kính trong veo như giọt sương đầu núi.', en: 'Every frame was shot with heart from drones soaring to the proud peak of Fansipan, to close-ups of sweat rolling down a farmer\'s cheek. From golden sunsets dyeing terraced fields, to the moment a highland child\'s eyes meet the lens as clear as morning dew on the mountaintop.' },
       outcome: { vi: 'Đây không chỉ là một video. Đây là bản giao hưởng của núi sông, là hơi thở của 4000 năm văn hiến, là lời tri ân gửi đến mảnh đất đã sinh ra và nuôi dưỡng chúng ta.', en: 'This is not just a video. This is a symphony of mountains and rivers, the breath of 4000 years of civilization, a tribute to the land that gave birth to and nurtured us.' },
     },
     credits: [
@@ -238,7 +238,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'ai-production-clip',
-    title: { vi: 'StoryMee Studio — Photo to Film', en: 'StoryMee Studio — Photo to Film' },
+    title: { vi: 'StoryMee Studio Photo to Film', en: 'StoryMee Studio Photo to Film' },
     client: 'StoryMee Studio',
     year: 0,
     category: 'post_production',
@@ -247,9 +247,9 @@ export const projects: Project[] = [
     gradient: 'linear-gradient(135deg, #1a2a3a 0%, #3a4a5a 30%, #5a6a7a 50%, #0a0a0b 100%)',
     videoUrl: '/assets/ai-production.mp4',
     caseStudy: {
-      challenge: { vi: 'Chúng tôi nhận những bức ảnh raw, biến những bức ảnh có chuyển động, và tạo thành một thước phim kỉ niệm cũ. Có những kỷ niệm chỉ kịp đọng lại trong một bức ảnh tĩnh. Một nụ cười của bà, ánh mắt của mẹ, khoảnh khắc tuổi thơ bên hiên nhà cũ – tất cả nằm im lặng trong khung hình đã ngả màu thời gian.', en: 'We take raw photos, bring movement to them, and create a nostalgic film reel. Some memories only survive in a single still photo. Grandmother\'s smile, mother\'s gaze, childhood moments on the old porch – all lying silent in time-faded frames.' },
-      approach: { vi: 'Chúng tôi ở đây để thổi hồn vào những bức ảnh ấy. Từ những tấm ảnh raw, chúng tôi mang lại chuyển động, ánh nhìn, hơi thở – biến khoảnh khắc tĩnh thành thước phim sống động, để bạn được gặp lại chứ không chỉ nhìn lại.', en: 'We are here to breathe life into those photos. From raw images, we bring movement, gaze, breath – turning still moments into vivid films, so you can meet again, not just look back.' },
-      outcome: { vi: 'Khi không ai kịp bấm máy quay, khi ký ức chỉ còn là vài tấm ảnh ố vàng – chúng tôi giúp bạn dựng lại cả một miền nhớ.', en: 'When no one had time to press record, when memories are just a few yellowed photos – we help you reconstruct an entire realm of memory.' },
+      challenge: { vi: 'Chúng tôi nhận những bức ảnh raw, biến những bức ảnh có chuyển động, và tạo thành một thước phim kỉ niệm cũ. Có những kỷ niệm chỉ kịp đọng lại trong một bức ảnh tĩnh. Một nụ cười của bà, ánh mắt của mẹ, khoảnh khắc tuổi thơ bên hiên nhà cũ tất cả nằm im lặng trong khung hình đã ngả màu thời gian.', en: 'We take raw photos, bring movement to them, and create a nostalgic film reel. Some memories only survive in a single still photo. Grandmother\'s smile, mother\'s gaze, childhood moments on the old porch all lying silent in time-faded frames.' },
+      approach: { vi: 'Chúng tôi ở đây để thổi hồn vào những bức ảnh ấy. Từ những tấm ảnh raw, chúng tôi mang lại chuyển động, ánh nhìn, hơi thở biến khoảnh khắc tĩnh thành thước phim sống động, để bạn được gặp lại chứ không chỉ nhìn lại.', en: 'We are here to breathe life into those photos. From raw images, we bring movement, gaze, breath turning still moments into vivid films, so you can meet again, not just look back.' },
+      outcome: { vi: 'Khi không ai kịp bấm máy quay, khi ký ức chỉ còn là vài tấm ảnh ố vàng chúng tôi giúp bạn dựng lại cả một miền nhớ.', en: 'When no one had time to press record, when memories are just a few yellowed photos we help you reconstruct an entire realm of memory.' },
     },
     credits: [
       { role: 'Production', name: 'StoryMee Studio' },
@@ -258,7 +258,7 @@ export const projects: Project[] = [
 
   {
     slug: 'song-cau-town',
-    title: { vi: 'Sông Cầu Town — Phú Yên', en: 'Song Cau Town — Phu Yen' },
+    title: { vi: 'Sông Cầu Town Phú Yên', en: 'Song Cau Town Phu Yen' },
     client: 'Nam Bình Group',
     year: 0,
     category: 'commercial',
@@ -335,9 +335,9 @@ export const ips: IP[] = [
       '/assets/paco/exp-paco.jpg',
     ],
     characters: [
-      { name: { vi: 'Paco Nhỏ', en: 'Cute Paco' }, role: 'Phiên bản nhỏ', bio: { vi: 'Paco lúc còn nhỏ — ngây thơ, tò mò, mắt tròn xoe và luôn lạc quan.', en: 'Baby Paco — innocent, curious, round-eyed and always optimistic.' }, gradient: 'linear-gradient(135deg, #4CAF50, #81C784)', image: '/assets/paco/cute-paco.jpg' },
-      { name: { vi: 'Paco Trưởng Thành', en: 'Young Paco' }, role: 'Phiên bản lớn', bio: { vi: 'Paco trưởng thành — tự tin, trung thành, luôn bên cạnh ông chủ qua mọi biến cố.', en: 'Grown-up Paco — confident, loyal, always by his owner\'s side through every challenge.' }, gradient: 'linear-gradient(135deg, #2d692d, #4CAF50)', image: '/assets/paco/young-paco.jpg' },
-      { name: { vi: 'Paco Già', en: 'Exp Paco' }, role: 'Phiên bản già', bio: { vi: 'Paco về già — đôi mắt hiền từ, lông hơi bạc, mang theo cả đời ký ức bên ông chủ.', en: 'Elder Paco — wise eyes, slightly greyed feathers, carrying a lifetime of memories with his owner.' }, gradient: 'linear-gradient(135deg, #1b3d1b, #2d692d)', image: '/assets/paco/exp-paco.jpg' },
+      { name: { vi: 'Paco Nhỏ', en: 'Cute Paco' }, role: 'Phiên bản nhỏ', bio: { vi: 'Paco lúc còn nhỏ ngây thơ, tò mò, mắt tròn xoe và luôn lạc quan.', en: 'Baby Paco innocent, curious, round-eyed and always optimistic.' }, gradient: 'linear-gradient(135deg, #4CAF50, #81C784)', image: '/assets/paco/cute-paco.jpg' },
+      { name: { vi: 'Paco Trưởng Thành', en: 'Young Paco' }, role: 'Phiên bản lớn', bio: { vi: 'Paco trưởng thành tự tin, trung thành, luôn bên cạnh ông chủ qua mọi biến cố.', en: 'Grown-up Paco confident, loyal, always by his owner\'s side through every challenge.' }, gradient: 'linear-gradient(135deg, #2d692d, #4CAF50)', image: '/assets/paco/young-paco.jpg' },
+      { name: { vi: 'Paco Già', en: 'Exp Paco' }, role: 'Phiên bản già', bio: { vi: 'Paco về già đôi mắt hiền từ, lông hơi bạc, mang theo cả đời ký ức bên ông chủ.', en: 'Elder Paco wise eyes, slightly greyed feathers, carrying a lifetime of memories with his owner.' }, gradient: 'linear-gradient(135deg, #1b3d1b, #2d692d)', image: '/assets/paco/exp-paco.jpg' },
     ],
     episodes: [
       { number: 1, title: { vi: 'Ngày đầu tiên bay', en: 'First Day of Flight' }, synopsis: { vi: 'Paco lần đầu tiên học bay và gặp những người bạn mới.', en: 'Paco learns to fly for the first time and meets new friends.' }, runtime: 420, releaseDate: '2025-06-01', gradient: 'linear-gradient(135deg, #4CAF50, #2d692d)' },
@@ -355,8 +355,8 @@ export const ips: IP[] = [
     keyVisual: '/assets/bear-poster.jpeg',
     videoUrl: '/assets/ip-bear.mp4',
     worldDescription: {
-      vi: 'Sống giữa thế giới đầy đồ điện tử thông minh — nhưng đôi tay to vụng về khiến mọi thiết bị high-tech đều hỏng. Chán nản, Bigpaw quay về dùng đồ cổ analog, và khám phá niềm vui chậm rãi của thế giới cũ. Hoạt hình không lời, format 30–60 giây.',
-      en: 'Living in a world full of smart electronics — but his big clumsy hands break every high-tech device. Frustrated, Bigpaw returns to using analog antiques, and discovers the slow joy of the old world. Silent animation, 30-60 second format.',
+      vi: 'Sống giữa thế giới đầy đồ điện tử thông minh nhưng đôi tay to vụng về khiến mọi thiết bị high-tech đều hỏng. Chán nản, Bigpaw quay về dùng đồ cổ analog, và khám phá niềm vui chậm rãi của thế giới cũ. Hoạt hình không lời, format 30 60 giây.',
+      en: 'Living in a world full of smart electronics but his big clumsy hands break every high-tech device. Frustrated, Bigpaw returns to using analog antiques, and discovers the slow joy of the old world. Silent animation, 30-60 second format.',
     },
     characters: [
       { name: { vi: 'Bigpaw', en: 'Bigpaw' }, role: 'Main Character', bio: { vi: 'Đôi tay to vụng về nhưng mang trái tim ấm áp.', en: 'Big clumsy hands but a warm heart.' }, gradient: 'linear-gradient(135deg, #3d2800, #8D6E63)' },
@@ -426,8 +426,8 @@ export const ips: IP[] = [
     keyVisual: '/assets/boing-poster.png',
     videoUrl: '/assets/boing-teaser.mp4',
     worldDescription: {
-      vi: 'Những con vật béo tròn, mềm như bóng cao su — mỗi cú nhảy, mỗi bước đi đều \'boing boing\' đầy tính vật lý và hài hước. Hiện ra mắt dưới dạng clip 15 giây — vừa đủ để gây cười, vừa dễ viral. Không lời thoại, không rào cản văn hóa.',
-      en: 'Round, chubby animals as soft as rubber balls — every jump, every step is a bouncy \'boing boing\' full of physics and humor. Currently released as 15-second clips — just enough to be funny and easily viral. No dialogue, no cultural barriers.',
+      vi: 'Những con vật béo tròn, mềm như bóng cao su mỗi cú nhảy, mỗi bước đi đều \'boing boing\' đầy tính vật lý và hài hước. Hiện ra mắt dưới dạng clip 15 giây vừa đủ để gây cười, vừa dễ viral. Không lời thoại, không rào cản văn hóa.',
+      en: 'Round, chubby animals as soft as rubber balls every jump, every step is a bouncy \'boing boing\' full of physics and humor. Currently released as 15-second clips just enough to be funny and easily viral. No dialogue, no cultural barriers.',
     },
     gallery: [
       '/assets/boing/alpine.png',
@@ -469,8 +469,8 @@ export const ips: IP[] = [
     keyVisual: '/assets/midimouse-poster.png',
     videoUrl: '/assets/midimouse-episodes.mp4',
     worldDescription: {
-      vi: 'Chú chuột MIDIMouse là một chú chuột nhỏ thông minh, tinh nghịch nhưng vẫn giữ được sự lịch thiệp và duyên dáng. Sống giữa những không gian đời thường, MIDIMouse luôn mang đến những tình huống bất ngờ, hài hước nhưng cũng đầy khéo léo nhờ sự lanh lợi của mình. Đặc biệt, chú rất yêu thích ca hát – mỗi hành động, mỗi câu chuyện đều như một giai điệu vui nhộn, lan tỏa năng lượng tích cực.\n\nKhông chỉ giải trí, MIDIMouse còn là người bạn đồng hành trong những bài học đầu đời dành cho trẻ nhỏ: từ thói quen sinh hoạt tốt (đánh răng, rửa tay, ngủ đúng giờ), kỹ năng ứng xử (lễ phép, chia sẻ, giúp đỡ người khác) đến việc khám phá thế giới xung quanh qua âm nhạc. Các nội dung ca nhạc được thể hiện đơn giản, dễ nhớ, giai điệu vui tươi, giúp trẻ vừa học vừa chơi một cách tự nhiên và hứng thú.',
-      en: 'MIDIMouse is a smart, mischievous little mouse who maintains politeness and grace. Living in everyday spaces, MIDIMouse always brings unexpected, humorous, yet clever situations thanks to his agility. He especially loves singing – every action and story is like a fun melody spreading positive energy.\n\nBeyond entertainment, MIDIMouse is a companion in early childhood lessons: from good daily habits (brushing teeth, washing hands, sleeping on time), behavioral skills (politeness, sharing, helping others) to discovering the world through music. The musical content is simple, memorable, and cheerful, helping children learn naturally and enthusiastically while playing.',
+      vi: 'Chú chuột MIDIMouse là một chú chuột nhỏ thông minh, tinh nghịch nhưng vẫn giữ được sự lịch thiệp và duyên dáng. Sống giữa những không gian đời thường, MIDIMouse luôn mang đến những tình huống bất ngờ, hài hước nhưng cũng đầy khéo léo nhờ sự lanh lợi của mình. Đặc biệt, chú rất yêu thích ca hát mỗi hành động, mỗi câu chuyện đều như một giai điệu vui nhộn, lan tỏa năng lượng tích cực.\n\nKhông chỉ giải trí, MIDIMouse còn là người bạn đồng hành trong những bài học đầu đời dành cho trẻ nhỏ: từ thói quen sinh hoạt tốt (đánh răng, rửa tay, ngủ đúng giờ), kỹ năng ứng xử (lễ phép, chia sẻ, giúp đỡ người khác) đến việc khám phá thế giới xung quanh qua âm nhạc. Các nội dung ca nhạc được thể hiện đơn giản, dễ nhớ, giai điệu vui tươi, giúp trẻ vừa học vừa chơi một cách tự nhiên và hứng thú.',
+      en: 'MIDIMouse is a smart, mischievous little mouse who maintains politeness and grace. Living in everyday spaces, MIDIMouse always brings unexpected, humorous, yet clever situations thanks to his agility. He especially loves singing every action and story is like a fun melody spreading positive energy.\n\nBeyond entertainment, MIDIMouse is a companion in early childhood lessons: from good daily habits (brushing teeth, washing hands, sleeping on time), behavioral skills (politeness, sharing, helping others) to discovering the world through music. The musical content is simple, memorable, and cheerful, helping children learn naturally and enthusiastically while playing.',
     },
     characters: [
       { name: { vi: 'MIDIMouse', en: 'MIDIMouse' }, role: 'Main Character', bio: { vi: 'Chú chuột nhỏ yêu ca hát.', en: 'Little mouse who loves singing.' }, gradient: 'linear-gradient(135deg, #800080, #9C27B0)' },
@@ -541,9 +541,9 @@ export const team: TeamMember[] = [
 
 // ========== DEMO PRESS ==========
 export const pressArticles: PressArticle[] = [
-  { publication: 'Khởi Nghiệp', headline: 'Founder StoryMee - Kim Ngân: Từ say mê AI rẽ sang làm "Sách độc bản" vì niềm vui của con', excerpt: 'Từng ấp ủ ước mơ dùng trí tuệ nhân tạo (AI) để tạo ra hàng loạt những ấn phẩm cho trẻ em, Kim Ngân phải dừng ngay ý tưởng chỉ sau vài tháng triển khai vì nhận ra vô vàn rào cản đến từ công nghệ.', date: '2026-01-15', url: 'https://khoinghiep.net.vn/founder-storymee-kim-ngan-a1214.html', lang: 'vi' },
+  { publication: 'Khởi Nghiệp', headline: 'Founder StoryMee Kim Ngân: Từ say mê AI rẽ sang làm "Sách độc bản" vì niềm vui của con', excerpt: 'Từng ấp ủ ước mơ dùng trí tuệ nhân tạo (AI) để tạo ra hàng loạt những ấn phẩm cho trẻ em, Kim Ngân phải dừng ngay ý tưởng chỉ sau vài tháng triển khai vì nhận ra vô vàn rào cản đến từ công nghệ.', date: '2026-01-15', url: 'https://khoinghiep.net.vn/founder-storymee-kim-ngan-a1214.html', lang: 'vi' },
   { publication: 'VnExpress', headline: 'Chú corgi Ú và giấc mơ animation Việt', excerpt: 'Series silent comedy 15 giây của StoryMee thu hút hàng triệu lượt xem trên mạng xã hội.', date: '2025-03-20', url: '#', lang: 'vi' },
-  { publication: 'Animation Magazine', headline: 'StoryMee: Vietnam\'s Rising Animation Studio', excerpt: 'The studio\'s original IPs — from a chubby corgi to a friendly virus — are capturing hearts worldwide.', date: '2025-02-10', url: '#', lang: 'en' },
+  { publication: 'Animation Magazine', headline: 'StoryMee: Vietnam\'s Rising Animation Studio', excerpt: 'The studio\'s original IPs from a chubby corgi to a friendly virus are capturing hearts worldwide.', date: '2025-02-10', url: '#', lang: 'en' },
   { publication: 'Thanh Niên', headline: 'StoryMee và hành trình xây dựng IP animation Việt Nam', excerpt: 'Từ Paco đến Ú, mỗi nhân vật của StoryMee đều mang đậm bản sắc Việt nhưng có sức hấp dẫn toàn cầu.', date: '2024-12-05', url: '#', lang: 'vi' },
 ];
 
@@ -554,7 +554,7 @@ export const jobs: JobPosting[] = [
     department: 'Animation',
     location: 'Vietnam / Remote',
     type: 'Full-time',
-    description: { vi: 'Tạo animation cho các nhân vật IP của StoryMee — cần kinh nghiệm Maya/Blender.', en: 'Create animations for StoryMee\'s IP characters — Maya/Blender experience required.' },
+    description: { vi: 'Tạo animation cho các nhân vật IP của StoryMee cần kinh nghiệm Maya/Blender.', en: 'Create animations for StoryMee\'s IP characters Maya/Blender experience required.' },
   },
   {
     title: { vi: 'Story Writer', en: 'Story Writer' },

@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useRef, useState, useEffect as useClientEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import type { Dictionary } from '@/lib/types';
 
 interface Props {
@@ -12,6 +12,18 @@ interface Props {
 export default function HeroSection({ lang, dict }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
+  const [windowHeight, setWindowHeight] = useState(800);
+
+  useEffect(() => {
+    setWindowHeight(window.innerHeight);
+    const handleResize = () => setWindowHeight(window.innerHeight);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const { scrollY } = useScroll();
+  const overlayOpacity = useTransform(scrollY, [0, windowHeight], [0, 0.85]);
+  const blurValue = useTransform(scrollY, [0, windowHeight], ['blur(0px)', 'blur(20px)']);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -78,8 +90,8 @@ export default function HeroSection({ lang, dict }: Props) {
         justifyContent: 'center',
       }}
     >
-      {/* Showreel Video */}
-      <div style={{ position: 'absolute', inset: 0, cursor: 'pointer' }} onClick={toggleMute} title="Click to toggle sound">
+      {/* Fixed Showreel Video Background */}
+      <div style={{ position: 'fixed', inset: 0, zIndex: -2 }}>
         <video
           ref={videoRef}
           autoPlay
@@ -92,9 +104,23 @@ export default function HeroSection({ lang, dict }: Props) {
             height: '100%',
             objectFit: 'cover',
           }}
+          onClick={toggleMute}
+          title="Click to toggle sound"
         >
           <source src="/assets/ip-virus.mp4" type="video/mp4" />
         </video>
+
+        {/* Dynamic Scroll Overlay */}
+        <motion.div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'var(--bg-primary)',
+            opacity: overlayOpacity,
+            filter: blurValue,
+            pointerEvents: 'none',
+          }}
+        />
 
         {/* Sound Indicator */}
         <div style={{
@@ -123,28 +149,7 @@ export default function HeroSection({ lang, dict }: Props) {
             {isMuted ? 'SOUND OFF (CLICK TO UNMUTE)' : 'SOUND ON'}
           </span>
         </div>
-        {/* Letterbox bars */}
-        <div style={{
-          position: 'absolute', top: 0, left: 0, right: 0,
-          height: '10%',
-          background: 'var(--bg-primary)',
-          zIndex: 2,
-        }} />
-        <div style={{
-          position: 'absolute', bottom: 0, left: 0, right: 0,
-          height: '10%',
-          background: 'var(--bg-primary)',
-          zIndex: 2,
-        }} />
       </div>
-
-      {/* Gradient overlay for text */}
-      <div className="gradient-top" style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: '40%', zIndex: 3,
-      }} />
-      <div className="gradient-bottom" style={{
-        position: 'absolute', bottom: 0, left: 0, right: 0, height: '50%', zIndex: 3,
-      }} />
 
       {/* Film grain */}
       <div className="film-grain" style={{ position: 'absolute', inset: 0, zIndex: 4, pointerEvents: 'none' }} />
@@ -167,12 +172,12 @@ export default function HeroSection({ lang, dict }: Props) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2.2, ease: [0.65, 0, 0.35, 1] }}
-          style={{ maxWidth: '700px' }}
+          style={{ flex: 1, textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}
         >
-          <h1 className="text-display-xl" style={{ marginBottom: '16px' }}>
+          <h1 className="text-display-xl" style={{ marginBottom: '16px', textTransform: 'none', fontWeight: 400, fontStyle: 'italic' }}>
             {dict.hero.tagline}
           </h1>
-          <p className="text-body" style={{ color: 'var(--text-secondary)', maxWidth: '440px' }}>
+          <p className="text-body" style={{ color: 'var(--text-secondary)', maxWidth: '440px', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
             {dict.hero.subtitle}
           </p>
         </motion.div>
@@ -186,6 +191,7 @@ export default function HeroSection({ lang, dict }: Props) {
             display: 'flex',
             gap: 'clamp(16px, 3vw, 40px)',
             alignItems: 'flex-end',
+            textShadow: '0 2px 10px rgba(0,0,0,0.8)'
           }}
         >
           {[
@@ -197,7 +203,7 @@ export default function HeroSection({ lang, dict }: Props) {
               <div className="text-display-m" style={{ fontFamily: 'var(--font-display)', lineHeight: 1 }}>
                 {stat.value}
               </div>
-              <div className="text-micro" style={{ color: 'var(--text-tertiary)', marginTop: '4px' }}>
+              <div className="text-micro" style={{ color: 'var(--text-tertiary)', marginTop: '4px', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>
                 {stat.label}
               </div>
             </div>

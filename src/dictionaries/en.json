@@ -20,12 +20,12 @@
     "est": "EST."
   },
   "three_doors": {
-    "label": "02 — CHOOSE YOUR PATH",
+    "label": "02 CHOOSE YOUR PATH",
     "title": "Three doors.",
     "brand": {
       "label": "FOR BRANDS & AGENCIES",
       "title": "See our production work",
-      "desc": "Commercials, music videos, short films — crafted with cinematic precision.",
+      "desc": "Commercials, music videos, short films crafted with cinematic precision.",
       "cta": "Explore work"
     },
     "partners": {
@@ -37,16 +37,16 @@
     "fans": {
       "label": "FOR FANS",
       "title": "Enter the worlds we build",
-      "desc": "Characters, episodes, lore — dive into the universes born from our studio.",
+      "desc": "Characters, episodes, lore dive into the universes born from our studio.",
       "cta": "Discover IPs"
     }
   },
   "featured_ip": {
-    "label": "03 — FEATURED IP",
+    "label": "03 FEATURED IP",
     "cta": "Enter the world"
   },
   "press": {
-    "label": "04 — AS SEEN IN",
+    "label": "04 AS SEEN IN",
     "title": "Press & Recognition"
   },
   "cta": {
@@ -97,18 +97,18 @@
   },
   "about": {
     "title": "About",
-    "story_label": "01 — OUR STORY",
+    "story_label": "01 OUR STORY",
     "story_title": "Born from a love of storytelling.",
-    "team_label": "02 — THE TEAM",
+    "team_label": "02 THE TEAM",
     "team_title": "The people behind the magic.",
-    "services_label": "03 — SERVICES",
+    "services_label": "03 SERVICES",
     "services_title": "What we do.",
     "ip_dev": "IP Development",
     "production": "Production",
     "post_production": "Post Production",
-    "pipeline_label": "04 — PIPELINE",
+    "pipeline_label": "04 PIPELINE",
     "pipeline_title": "How we work.",
-    "awards_label": "05 — AWARDS & CLIENTS"
+    "awards_label": "05 AWARDS & CLIENTS"
   },
   "press_page": {
     "title": "Press",
@@ -145,8 +145,8 @@
     },
     "budgets": {
       "small": "< $10k",
-      "medium": "$10k – $50k",
-      "large": "$50k – $200k",
+      "medium": "$10k $50k",
+      "large": "$50k $200k",
       "enterprise": "$200k+",
       "tbd": "TBD"
     },

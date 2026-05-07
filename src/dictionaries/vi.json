@@ -8,7 +8,7 @@
     "contact": "LIÊN HỆ"
   },
   "hero": {
-    "tagline": "Nơi câu chuyện trở thành thế giới.",
+    "tagline": "Những vũ trụ muôn hình vạn trạng.",
     "subtitle": "Studio xây dựng thế giới nhân vật IP tại Việt Nam.",
     "scroll": "CUỘN ĐỂ KHÁM PHÁ",
     "sound_on": "BẬT ÂM",
@@ -20,12 +20,12 @@
     "est": "THÀNH LẬP"
   },
   "three_doors": {
-    "label": "02 — CHỌN LỐI ĐI",
+    "label": "02 CHỌN LỐI ĐI",
     "title": "Ba cánh cửa.",
     "brand": {
       "label": "DÀNH CHO BRANDS & AGENCIES",
       "title": "Xem các dự án sản xuất",
-      "desc": "Quảng cáo, music video, phim ngắn — được tạo ra với sự chính xác điện ảnh.",
+      "desc": "Quảng cáo, music video, phim ngắn được tạo ra với sự chính xác điện ảnh.",
       "cta": "Khám phá"
     },
     "partners": {
@@ -37,21 +37,21 @@
     "fans": {
       "label": "DÀNH CHO FANS",
       "title": "Bước vào thế giới chúng tôi xây dựng",
-      "desc": "Nhân vật, tập phim, truyền thuyết — hòa mình vào vũ trụ từ studio.",
+      "desc": "Nhân vật, tập phim, truyền thuyết hòa mình vào vũ trụ từ studio.",
       "cta": "Khám phá IPs"
     }
   },
   "featured_ip": {
-    "label": "03 — IP NỔI BẬT",
+    "label": "03 IP NỔI BẬT",
     "cta": "Bước vào thế giới"
   },
   "press": {
-    "label": "04 — XUẤT HIỆN TRÊN",
+    "label": "04 XUẤT HIỆN TRÊN",
     "title": "Báo chí & Ghi nhận"
   },
   "cta": {
-    "headline": "Có dự án?",
-    "headline2": "Hãy nói chuyện.",
+    "headline": "Ấp ủ một vũ trụ,",
+    "headline2": "hãy trao đổi với chúng tôi.",
     "primary": "Bắt đầu dự án",
     "secondary": "Xem các IPs"
   },
@@ -97,18 +97,18 @@
   },
   "about": {
     "title": "Về chúng tôi",
-    "story_label": "01 — CÂU CHUYỆN",
+    "story_label": "01 CÂU CHUYỆN",
     "story_title": "Sinh ra từ tình yêu kể chuyện.",
-    "team_label": "02 — ĐỘI NGŨ",
-    "team_title": "Những con người đằng sau phép màu.",
-    "services_label": "03 — DỊCH VỤ",
+    "team_label": "02 ĐỘI NGŨ",
+    "team_title": "Phía sau các vũ trụ IP.",
+    "services_label": "03 DỊCH VỤ",
     "services_title": "Chúng tôi làm gì.",
     "ip_dev": "Phát triển IP",
     "production": "Sản xuất",
     "post_production": "Hậu kỳ",
-    "pipeline_label": "04 — QUY TRÌNH",
+    "pipeline_label": "04 QUY TRÌNH",
     "pipeline_title": "Cách chúng tôi làm việc.",
-    "awards_label": "05 — GIẢI THƯỞNG & KHÁCH HÀNG"
+    "awards_label": "05 GIẢI THƯỞNG & KHÁCH HÀNG"
   },
   "press_page": {
     "title": "Báo chí",
@@ -145,8 +145,8 @@
     },
     "budgets": {
       "small": "< $10k",
-      "medium": "$10k – $50k",
-      "large": "$50k – $200k",
+      "medium": "$10k $50k",
+      "large": "$50k $200k",
       "enterprise": "$200k+",
       "tbd": "Chưa xác định"
     },

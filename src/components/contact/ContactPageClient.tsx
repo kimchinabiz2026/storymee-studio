@@ -80,7 +80,7 @@ export default function ContactPageClient({ lang, dict }: Props) {
                     {dict.contact.project_type}
                   </label>
                   <select style={inputStyle}>
-                    <option value="">—</option>
+                    <option value=""></option>
                     {Object.entries(dict.contact.types).map(([k, v]) => (
                       <option key={k} value={k}>{v}</option>
                     ))}
@@ -91,7 +91,7 @@ export default function ContactPageClient({ lang, dict }: Props) {
                     {dict.contact.budget}
                   </label>
                   <select style={inputStyle}>
-                    <option value="">—</option>
+                    <option value=""></option>
                     {Object.entries(dict.contact.budgets).map(([k, v]) => (
                       <option key={k} value={k}>{v}</option>
                     ))}

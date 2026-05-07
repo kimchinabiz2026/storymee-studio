@@ -349,7 +349,7 @@ export default function IPMiniSite({ lang, dict, ip }: Props) {
             {ip.episodes.length === 0 ? (
               <div style={{ background: 'var(--bg-primary)', padding: '60px', textAlign: 'center' }}>
                 <p className="text-body" style={{ color: 'var(--text-secondary)' }}>
-                  {lang === 'vi' ? 'Đang phát triển — sắp ra mắt!' : 'In development — coming soon!'}
+                  {lang === 'vi' ? 'Đang phát triển sắp ra mắt!' : 'In development coming soon!'}
                 </p>
               </div>
             ) : (

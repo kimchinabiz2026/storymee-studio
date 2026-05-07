@@ -44,9 +44,9 @@ const TeamMemberCard = ({ member, lang, delay }: { member: TeamMember, lang: 'vi
             </div>
           )}
         </div>
-        <div style={{ padding: '16px' }}>
-          <h3 className="text-headline" style={{ fontSize: '16px', marginBottom: '2px' }}>{member.name}</h3>
-          <span className="text-micro" style={{ color: 'var(--accent)', display: 'block', marginBottom: '8px' }}>
+        <div style={{ padding: '20px 16px' }}>
+          <h3 className="text-display-m" style={{ fontSize: '24px', marginBottom: '4px' }}>{member.name}</h3>
+          <span className="text-label" style={{ color: 'var(--accent)', display: 'block', marginBottom: '12px' }}>
             {member.role[lang]}
           </span>
           <p className="text-caption" style={{ color: 'var(--text-secondary)' }}>
@@ -101,13 +101,13 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
             <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2 }}>
               {lang === 'vi'
                 ? 'StoryMee là studio xây dựng và phát triển thế giới nhân vật IP tại Việt Nam, từ phim hoạt hình, nội dung ngắn, nội dung dài, đến hệ thống nhân vật cho các thương hiệu lớn. Chúng tôi tin rằng Việt Nam xứng đáng có một Disney của riêng mình, và chúng tôi đang tiên phong xây dựng từng nhân vật, từng thế giới, từng câu chuyện.'
-                : 'StoryMee is a studio that builds and develops IP character worlds in Vietnam — from animated films, short-form content, long-form content, to character systems for major brands. We believe Vietnam deserves its own Disney, and we are pioneering the creation of each character, each world, each story.'
+                : 'StoryMee is a studio that builds and develops IP character worlds in Vietnam from animated films, short-form content, long-form content, to character systems for major brands. We believe Vietnam deserves its own Disney, and we are pioneering the creation of each character, each world, each story.'
               }
             </p>
             <p className="text-body" style={{ color: 'var(--text-secondary)', lineHeight: 2 }}>
               {lang === 'vi'
-                ? 'Với hệ sinh thái 4+ IP gốc đang phát triển — từ chú vẹt Paco đáng yêu, gấu nâu hiền lành, corgi Ú hài hước đến thế giới vi khuẩn kỳ thú — StoryMee đang từng bước đưa animation Việt Nam ra thế giới. Mỗi nhân vật chúng tôi tạo ra đều mang DNA Việt nhưng có sức hấp dẫn toàn cầu.'
-                : 'With an ecosystem of 4+ original IPs in development — from the adorable parrot Paco, gentle brown bear, hilarious corgi Ú, to the fascinating microbe world — StoryMee is step by step bringing Vietnamese animation to the world. Every character we create carries Vietnamese DNA with global appeal.'
+                ? 'Với hệ sinh thái 4+ IP gốc đang phát triển từ chú vẹt Paco đáng yêu, gấu nâu hiền lành, corgi Ú hài hước đến thế giới vi khuẩn kỳ thú StoryMee đang từng bước đưa animation Việt Nam ra thế giới. Mỗi nhân vật chúng tôi tạo ra đều mang DNA Việt nhưng có sức hấp dẫn toàn cầu.'
+                : 'With an ecosystem of 4+ original IPs in development from the adorable parrot Paco, gentle brown bear, hilarious corgi Ú, to the fascinating microbe world StoryMee is step by step bringing Vietnamese animation to the world. Every character we create carries Vietnamese DNA with global appeal.'
               }
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
       }}>
         <RevealOnScroll>
           <span className="text-label" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '16px' }}>
-            {lang === 'vi' ? '— SHOWREEL' : '— SHOWREEL'}
+            {lang === 'vi' ? '  SHOWREEL' : '  SHOWREEL'}
           </span>
           <h2 className="text-display-l" style={{ marginBottom: '32px' }}>
             {lang === 'vi' ? 'StoryMee Production.' : 'StoryMee Production.'}
@@ -191,12 +191,12 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
 
         {/* Row 1: Founders */}
         <div style={{ marginBottom: '40px' }}>
-          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+          <h3 className="text-label" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
             {lang === 'vi' ? 'Ban Giám Đốc' : 'Board of Directors'}
           </h3>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
             gap: '20px',
           }}>
             {team.slice(0, 2).map((member, i) => (
@@ -207,7 +207,7 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
 
         {/* Row 2: Team Production */}
         <div style={{ marginBottom: '40px' }}>
-          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+          <h3 className="text-label" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
             Team Production
           </h3>
           <div style={{
@@ -223,7 +223,7 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
 
         {/* Row 3: Team Creative */}
         <div style={{ marginBottom: '40px' }}>
-          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+          <h3 className="text-label" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
             Team Creative
           </h3>
           <div style={{
@@ -239,7 +239,7 @@ export default function AboutPage({ params }: { params: Promise<{ lang: string }
 
         {/* Row 4: Team Growth */}
         <div style={{ marginBottom: '40px' }}>
-          <h3 className="text-headline" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
+          <h3 className="text-label" style={{ marginBottom: '24px', color: 'var(--text-secondary)' }}>
             Team Growth
           </h3>
           <div style={{

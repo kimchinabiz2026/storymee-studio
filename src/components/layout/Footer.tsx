@@ -35,7 +35,7 @@ export default function Footer({ lang, dict }: Props) {
           </div>
           <p className="text-caption" style={{ color: 'var(--text-secondary)', maxWidth: '260px' }}>
             Animation Studio & IP Creator.
-            <br />{lang === 'vi' ? 'Nơi câu chuyện trở thành thế giới.' : 'Where stories become worlds.'}
+            <br />{lang === 'vi' ? 'Những vũ trụ muôn hình vạn trạng.' : 'Where stories become worlds.'}
           </p>
         </div>
 

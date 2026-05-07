@@ -21,7 +21,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
 
   return (
     <div style={{ paddingTop: 0 }}>
-      {/* Section A — Hero */}
+      {/* Section A Hero */}
       <section style={{
         height: '100vh',
         position: 'relative',
@@ -46,13 +46,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           margin: '0 auto',
         }}>
           <span className="text-micro" style={{ color: 'var(--text-tertiary)', display: 'block', marginBottom: '12px' }}>
-            {project.client}{project.year > 0 ? ` — ${project.year}` : ''}
+            {project.client}{project.year > 0 ? ` ${project.year}` : ''}
           </span>
           <h1 className="text-display-xl">{project.title[l]}</h1>
         </div>
       </section>
 
-      {/* Section B — Info Bar */}
+      {/* Section B Info Bar */}
       <section style={{
         background: 'var(--bg-surface)',
         borderTop: '1px solid var(--border-subtle)',
@@ -90,7 +90,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
         </div>
       </section>
 
-      {/* Section C — Case Study */}
+      {/* Section C Case Study */}
       <section style={{
         padding: 'clamp(80px, 10vw, 160px) clamp(20px, 4vw, 60px)',
         maxWidth: '900px',
@@ -114,7 +114,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
         ))}
       </section>
 
-      {/* Section D — BTS Gallery placeholder */}
+      {/* Section D BTS Gallery placeholder */}
       <section style={{
         padding: '0 clamp(20px, 4vw, 60px) clamp(80px, 10vw, 120px)',
         maxWidth: '1400px',
@@ -142,7 +142,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
         </div>
       </section>
 
-      {/* Section E — Credits + Next */}
+      {/* Section E Credits + Next */}
       <section style={{
         borderTop: '1px solid var(--border-subtle)',
         padding: 'clamp(60px, 8vw, 100px) clamp(20px, 4vw, 60px)',

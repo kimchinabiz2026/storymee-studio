@@ -14,9 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
   const isVi = lang === 'vi';
   return {
-    title: isVi ? 'STORYMEE — Animation Studio & IP Creator' : 'STORYMEE — Animation Studio & IP Creator',
+    title: isVi ? 'STORYMEE Animation Studio & IP Creator' : 'STORYMEE Animation Studio & IP Creator',
     description: isVi
-      ? 'Nơi câu chuyện trở thành thế giới. Animation Studio & IP Creator tại Việt Nam.'
+      ? 'Những vũ trụ muôn hình vạn trạng. Animation Studio & IP Creator tại Việt Nam.'
       : 'Where stories become worlds. Animation Studio & IP Creator based in Vietnam.',
     alternates: {
       languages: {
