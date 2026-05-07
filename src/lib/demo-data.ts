@@ -486,7 +486,10 @@ export const team: TeamMember[] = [
   {
     name: 'Trần Thị Kim Ngân',
     role: { vi: 'Founder', en: 'Founder' },
-    bio: { vi: 'Định hướng chiến lược, "gác cổng" chất lượng nghệ thuật. StoryMee founder with a vision to bring Vietnamese animation to the world. Passionate about storytelling and building original IPs.', en: 'Strategic direction, "gatekeeper" of artistic quality. StoryMee founder with a vision to bring Vietnamese animation to the world. Passionate about storytelling and building original IPs.' },
+    bio: { 
+      vi: 'Nhà sáng lập StoryMee, ấp ủ giấc mơ ghi dấu hoạt hình Việt trên bản đồ thế giới. Sống cùng những câu chuyện và miệt mài kiến tạo các IP mang bản sắc riêng. Định hướng chiến lược, "gác cổng" chất lượng nghệ thuật các thế giới IP.', 
+      en: 'Founder of StoryMee, nurturing the dream of putting Vietnamese animation on the world map. Living with stories and diligently creating original IPs. Strategic direction, "gatekeeper" of the artistic quality of IP worlds.' 
+    },
     gradient: 'linear-gradient(135deg, #1a1a2e, #3d3d5c)',
     image: '/assets/team/kim-ngan.jpg',
     social: { instagram: '#', linkedin: '#' },
