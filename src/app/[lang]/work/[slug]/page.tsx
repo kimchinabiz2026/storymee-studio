@@ -186,7 +186,26 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
               inset: 0,
               background: nextProject.gradient,
               transition: 'transform 0.6s cubic-bezier(0.65, 0, 0.35, 1)',
-            }} />
+            }}>
+              {nextProject.thumbnail && nextProject.thumbnail !== '/placeholder.jpg' && (
+                <img
+                  src={nextProject.thumbnail}
+                  alt={nextProject.title[l]}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              )}
+              {nextProject.videoUrl && !nextProject.thumbnail?.includes('paco') && (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
+                >
+                  <source src={nextProject.videoUrl} type="video/mp4" />
+                </video>
+              )}
+            </div>
             <div style={{
               position: 'absolute',
               inset: 0,
